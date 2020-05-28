@@ -1,0 +1,190 @@
+.content-module-padding {
+    height: auto;
+}
+
+.standardshelp_link {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    margin: 15px 0;
+    font-size: 15.5px;
+    padding: 5px;
+}
+
+.boxdescription {
+    padding-bottom: 10px;
+}
+
+div.text-white>h1,
+div.text-white>p {
+    color: #FFFFFF;
+}
+
+.borderless {
+    border: none !important;
+}
+
+@media (max-width:767px) {
+    .modal-dialog {
+        width: 95%;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .modal-dialog {
+        width: 85%;
+    }
+}
+
+@media (min-width:992px) {
+    .modal-dialog {
+        width: 850px;
+    }
+}
+
+button.active>img {
+    color: #FFF;
+}
+
+button.active {
+    box-shadow: none !important;
+    background: rgba(255, 255, 255, 0) !important;
+}
+
+button.active#manu>.manubg,
+button.active#dist>.distbg,
+button.active#retail>.retailbg,
+button.active#oper>.operbg {
+    position: absolute;
+    margin: -108px -8px;
+
+    border-radius: 50%;
+    width: 116px;
+    height: 116px;
+    z-index: -1;
+}
+
+button.active#all>.allbg {
+    position: absolute;
+    margin: -57px -7px;
+
+    border-radius: 50%;
+    width: 93px;
+    height: 93px;
+    z-index: -1;
+}
+
+button#all {
+    height: 79px;
+    width: 79px;
+    border-radius: 50%;
+    padding: 0 !important;
+    margin-top: 10px;
+}
+
+button.active#manu>.manubg {
+    /*background-color: #cc3c0d !important;*/
+    background-color: #7AC143 !important;
+}
+
+button.active#dist>.distbg {
+    /*background-color: #568a2e !important;*/
+    background-color: #F05587 !important;
+}
+
+button.active#oper>.operbg {
+    /*background-color: #007792 !important;*/
+    background-color: #F26334 !important;
+}
+
+button.active#retail>.retailbg {
+    /*background-color: #007792 !important;*/
+    background-color: #002C6C !important;
+}
+
+.checkmark-list>li {
+    background: url('/pages/n/services/images/ecom-checkmark-bullet.png') no-repeat 0px 7px;
+    padding: 0px 0px 12px 30px;
+    /* reset styles (optional): */
+    list-style: none;
+    margin: 0;
+    border-bottom: none !important;
+}
+
+#parent>.box>.content-module-wrapper>.content-module>ul>li {
+    border-bottom: none;
+}
+
+#parent>.box>.content-module-wrapper>.content-module>ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+
+.fullbg {
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.carousel-inner {
+    height: auto !important;
+}
+
+.smallest {
+    font-size: 12px !important;
+    line-height: 120% !important;
+}
+
+.innerLists>li {
+    margin-bottom: 2px !important;
+    margin-top: 2px !important;
+    padding-bottom: 1px !important;
+    padding-top: 1px !important;
+}
+
+ul.steplist {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.page_step {
+    float: left;
+    padding: 3px 8px;
+    color: #ffffff;
+    background-color: #002c6c;
+    display: block;
+    position: relative;
+    margin: 0 0 0 7px;
+}
+
+.page_stepno {
+    float: left;
+    padding: 3px 8px;
+    color: #ffffff;
+    background-color: #7AC143;
+    font-weight: bold;
+    display: block;
+    position: relative;
+}
+
+.page_steptext {
+    float: left;
+    margin: 0 0 20px 110px;
+    display: block;
+    position: relative;
+}
+
+.page_steptext_title {
+    float: left;
+    margin: 0 0 20px 22px;
+    display: block;
+    position: relative;
+    font-weight: 500;
+}

@@ -1,0 +1,46 @@
+.no-padding {
+	padding: 0;
+	margin: 0;
+}
+
+.reg-step {
+	background-color: #002c6c;
+	height: 3em;
+	width: 3em;
+	border-radius: 50%;
+	color: #fff;
+	padding: .8em 1.1em;
+	font-weight: 800;
+}
+
+.step-line {
+	background-color: #002c6c;
+	height: 4px;
+	width: 100%;
+	position: absolute;
+	top: 1.5em;
+	z-index: -1;
+}
+
+.reg-text {
+	width: 3em;
+}
+
+.reg-text p {
+	text-align: center;
+	font-size: 0.5em;
+	line-height: 1em;
+	color: #002c6c;
+}
+
+.hero-icon {
+	float: right;
+	max-width: 8em;
+	margin-bottom: -8em;
+}
+
+@media screen and (max-width: 768px) {
+	.hero-icon {
+		margin-bottom: 1em;
+	}
+}

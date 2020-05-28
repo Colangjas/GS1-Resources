@@ -1,0 +1,283 @@
+.content-module-padding {
+    height: auto;
+}
+
+.standardshelp_link {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    margin: 15px 0;
+    font-size: 15.5px;
+    padding: 5px;
+}
+
+.boxdescription {
+    padding-bottom: 10px;
+}
+
+div.text-white>h1,
+div.text-white>p {
+    color: #FFFFFF;
+}
+
+.borderless {
+    border: none !important;
+}
+
+@media (max-width:767px) {
+    .modal-dialog {
+        width: 95%;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .modal-dialog {
+        width: 85%;
+    }
+}
+
+@media (min-width:992px) {
+    .modal-dialog {
+        width: 850px;
+    }
+}
+
+button.active>img {
+    color: #FFF;
+}
+
+button.active {
+    box-shadow: none !important;
+    background: rgba(255, 255, 255, 0) !important;
+}
+
+button.active#edu>.edubg,
+button.active#impPlan>.impPlanbg,
+button.active#stdDev>.stdDevbg,
+button.active#comMan>.comManbg {
+    position: absolute;
+    margin: -86px -7px;
+
+    border-radius: 50%;
+    width: 93px;
+    height: 93px;
+    z-index: -1;
+}
+
+button.active#all>.allbg {
+    position: absolute;
+    margin: -57px -7px;
+
+    border-radius: 50%;
+    width: 93px;
+    height: 93px;
+    z-index: -1;
+}
+
+button#all {
+    height: 79px;
+    width: 79px;
+    border-radius: 50%;
+    padding: 0 !important;
+    margin-top: 10px;
+}
+
+button.active#edu>.edubg {
+    /*background-color: #cc3c0d !important;*/
+    background-color: #7AC143 !important;
+}
+
+button.active#impPlan>.impPlanbg {
+    /*background-color: #568a2e !important;*/
+    background-color: #F26334 !important;
+}
+
+button.active#stdDev>.stdDevbg {
+    /*background-color: #007792 !important;*/
+    background-color: #00B6DE !important;
+}
+
+button.active#comMan>.comManbg {
+    background-color: #F05587 !important;
+}
+
+.checkmark-list>li {
+    background: url('/pages/n/services/images/ecom-checkmark-bullet.png') no-repeat 0px 7px;
+    padding: 0px 0px 12px 30px;
+    /* reset styles (optional): */
+    list-style: none;
+    margin: 0;
+    border-bottom: none !important;
+}
+
+#parent>.box>.content-module-wrapper>.content-module>ul>li {
+    border-bottom: none;
+}
+
+#parent>.box>.content-module-wrapper>.content-module>ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+
+.fullbg {
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.carousel-inner {
+    height: auto !important;
+}
+
+.smallest {
+    font-size: 12px !important;
+    line-height: 120% !important;
+}
+
+.board-title {
+    font-size: 14px !important;
+    line-height: 130% !important;
+}
+
+  /* BOOTSTRAP Responsive Grid */
+  .gs1-grid-container {
+      display: -ms-grid;
+      display: grid;
+      grid-gap: 1em;
+      -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-auto-flow: dense;
+  }
+
+  /* BOOTSTRAP Responsive XS */
+
+  @media (max-width:767px) {
+
+      .gs1-grid-container {
+          -ms-grid-columns: 1fr;
+          grid-template-columns: repeat(1, 1fr);
+      }
+
+  }
+
+  /* BOOTSTRAP Responsive SM */
+
+  @media (min-width:768px) and (max-width:991px) {
+
+      .gs1-grid-container {
+          -ms-grid-columns: 1fr 1em 1fr;
+          grid-template-columns: repeat(2, 1fr);
+      }
+
+  }
+
+  /* BOOTSTRAP Responsive MD */
+
+  @media (min-width:992px) and (max-width:1199px) {
+
+      .gs1-grid-container {
+          -ms-grid-columns: 1fr 1em 1fr 1em 1fr;
+          grid-template-columns: repeat(3, 1fr);
+      }
+
+  }
+
+  /* BOOTSTRAP Responsive LG */
+
+  @media (min-width:1200px) {
+
+      .gs1-grid-container {
+          -ms-grid-columns: 1fr 1em 1fr 1em 1fr 1em 1fr;
+          grid-template-columns: repeat(4, 1fr);
+      }
+
+  }
+
+
+  /* IE10+ CSS styles go here */
+
+  @media all and (-ms-high-contrast: none),
+  (-ms-high-contrast: active) {
+      .gs1-grid-container {
+          display: flex;
+          align-items: flex-start;
+          flex-wrap: wrap;
+      }
+
+      .gs1-grid-container .content-module-wrapper {
+          flex-shrink: 1;
+          align-content: space-evenly;
+          padding-bottom: .5em;
+      }
+
+  }
+
+  @media all and (max-width:767px) and (-ms-high-contrast: none),
+  (-ms-high-contrast: active) {
+
+      .gs1-grid-container .content-module-wrapper {
+          width: 100%;
+          max-width: 20em;
+          min-width: 18em;
+          margin-right: 0;
+          padding-bottom: .5em;
+          height: 42em;
+
+      }
+
+
+
+  }
+
+  @media all and (min-width:768px) and (max-width:991px) and (-ms-high-contrast: none),
+  (-ms-high-contrast: active) {
+
+      .gs1-grid-container .content-module-wrapper {
+          width: 48%;
+          margin-right: 2%;
+          padding-bottom: .5em;
+          height: 45em;
+
+      }
+
+
+
+  }
+
+  @media all and (min-width:992px) and (max-width:1199px) and (-ms-high-contrast: none),
+  (-ms-high-contrast: active) {
+
+      .gs1-grid-container .content-module-wrapper {
+          width: 31%;
+          margin-right: 2%;
+          padding-bottom: .5em;
+          height: 36em;
+
+      }
+
+
+
+  }
+
+
+  @media all and (min-width:1200px) and (-ms-high-contrast: none),
+  (-ms-high-contrast: active) {
+
+      .gs1-grid-container .content-module-wrapper {
+          width: 23%;
+          margin-right: 2%;
+          padding-bottom: .5em;
+          height: 32em;
+
+      }
+
+
+
+  }

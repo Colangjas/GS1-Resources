@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>GS1 Canada - PC FAQ</title><meta name="description" content="GS1 is a neutral, not-for-profit organization that develops and maintains global standards for efficient business communication, improving the efficiency, safety, security, sustainability and visibility of value chains across physical and digital channels. In Canada, through our unique community management role, we collaborate with business leaders and industry work groups to develop standards, implementation guidelines and non-proprietary business solutions, supporting subscribers of all sizes across multiple sectors."><meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"><meta name="viewport" content="width=device-width, initial-scale=1,  maximum-scale=3.0, minimum-scale=1"><meta name="gs1-template" content="gs1-v1.0"><link rel="stylesheet" type="text/css" href="/css/fonts.css"><link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css"><link rel="stylesheet" type="text/css" href="/css/bootstrap-theme.css"><link rel="stylesheet" type="text/css" href="/css/styles.css"><script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script><script type="text/javascript" src="/js/bootstrap.min.js"></script><script type="text/javascript" src="/js/gs1ca-scripts.js"></script><script src="/js/jquery.mobile-events.min.js"></script><script src="/js/jquery.flip.min.js"></script><link rel="icon" href="/favicon.ico"><meta name="keywords" content="bar code, barcode, barcodes, bar codes, UPC-A, UPC, upc code, upc codes, GTIN, data synch, data synchronization, data exchange, information exchange, ECCnet, ECCNET, Company Prefix, Company Prefix Licence,  Company Prefix License, supply chain, marketing images, planogram images, healthcare supply chain, health care supply chain, product recall, planogram, planogramming, Item Centre, Item Center"><link rel="stylesheet" type="text/css" href="/css/bog-styles.css"><meta name="next-head-count" content="18">
+</head>
+  <body>
+    <div class="container toolkit">
+      <h1>
+        Online Resources
+      </h1>
+      <nav>
+        <ul id="root-nav">
+        </ul>
+      </nav>
+
+    </div>
+    <script>
+      let nav = document.querySelector('#root-nav');
+      let links = [
+        {
+          title: 'Tiles',
+          link: '/tiles/',
+        }
+      ]
+
+      window.onload = function (){
+        for(let i=0; i<links.length; i++){
+        let ins = links[i];
+        let linkItem = document.createElement('li');
+        let linkAnchor = document.createElement('a');
+        linkAnchor.setAttribute('href', ins.link);
+        linkAnchor.textContent = ins.title;
+        linkItem.appendChild(linkAnchor);
+        nav.appendChild(linkItem);
+        }
+      }
+
+    </script>
+  </body>
+</html>

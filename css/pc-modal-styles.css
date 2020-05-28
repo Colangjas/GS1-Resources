@@ -1,0 +1,350 @@
+            .content-module-padding {
+                height: auto;
+            }
+
+            .standardshelp_link {
+                display: inline-block;
+                position: absolute;
+                bottom: 0;
+                margin: 15px 0;
+                font-size: 15.5px;
+                padding: 5px;
+            }
+
+            .boxdescription {
+                padding-bottom: 10px;
+            }
+
+            div.text-white>h1,
+            div.text-white>p {
+                color: #FFFFFF;
+            }
+
+            .borderless {
+                border: none !important;
+            }
+
+            @media (max-width:767px) {
+                .modal-dialog {
+                    width: 95%;
+                }
+            }
+
+            @media (min-width:768px) and (max-width:991px) {
+                .modal-dialog {
+                    width: 85%;
+                }
+            }
+
+            @media (min-width:992px) {
+                .modal-dialog {
+                    width: 850px;
+                }
+            }
+
+            .checkmark-list>li {
+                background: url('/pages/n/services/images/ecom-checkmark-bullet.png') no-repeat 0px 7px;
+                padding: 0px 0px 12px 30px;
+                /* reset styles (optional): */
+                list-style: none;
+                margin: 0;
+                border-bottom: none !important;
+            }
+
+            .fullbg {
+                width: 100% !important;
+                padding: 0 !important;
+                margin: 0 !important;
+            }
+
+            .carousel-inner {
+                height: auto !important;
+            }
+
+            ::-moz-selection {
+                background-color: #002c6c;
+                color: #FFFFFF;
+            }
+
+            ::selection {
+                background-color: #002c6c;
+                color: #FFFFFF;
+            }
+
+            /* ================================================== */
+
+
+
+            .ims-title-box {
+                display: table;
+                margin: 20px 0 0 0;
+            }
+
+            .ims-title-row {
+                display: table-row;
+            }
+
+            .ims-title-icon {
+                padding: 0 15px 0 0;
+                display: table-cell;
+            }
+
+            .ims-title {
+                padding: 0;
+                display: table-cell;
+                vertical-align: top;
+            }
+
+            .ims-title h2 {
+                margin: 25px 0 0 0;
+            }
+
+            .ims-title h3 {
+                margin: 5px 0 0 0;
+                padding: 0;
+            }
+
+            .ims-title h4 {
+                margin: 0;
+                padding: 0;
+            }
+
+            td {
+                padding: 8px;
+            }
+
+            td h4 {
+                margin: 10px !important;
+                color: #FFFFFF !important;
+            }
+
+            button.active>img {
+                color: #FFF;
+            }
+
+            button.active {
+                box-shadow: none !important;
+                background: rgba(255, 255, 255, 0) !important;
+            }
+
+            button.active#nu>.nubg,
+            button.active#ec>.ecbg,
+            button.active#ph>.phbg {
+                position: absolute;
+                margin: -107px -8px;
+
+                border-radius: 50%;
+                width: 115px;
+                height: 115px;
+                z-index: -1;
+
+            }
+
+
+            button.active#nu>.nubg {
+                background-color: #F58220 !important;
+            }
+
+            button.active#ec>.ecbg {
+                background-color: #F26334 !important;
+            }
+
+            button.active#ph>.phbg {
+                background-color: #002C6C !important;
+            }
+
+            .icon-parafloat {
+                padding: 0 0 0 20px;
+                position: relative;
+            }
+
+            .icon-parafloat p,
+            .icon-parafloat ul li {
+                font-size: 16px;
+                line-height: 24px;
+                color: #454545;
+                font-family: "Gotham SSm A", "Gotham SSm B", Verdana, sans-serif;
+                margin: 0 0 10px 25px;
+                /* Adjust left margin to complement for icon image width */
+                font-weight: 300;
+            }
+
+            .icon-parafloat img {
+                left: 0;
+                position: absolute;
+                top: 0;
+            }
+
+            .to-support {
+                border: 1px solid #89aadb;
+                padding: 16px;
+                background-color: #f0f3f7;
+            }
+
+            .to-support>h3 {
+                margin-top: 16px;
+            }
+
+            .to-support>ul>li {
+                list-style-type: none;
+                background: url(/gs1-images/icons/Product-Cert-Flow-icon-seal.png) no-repeat top left;
+                background-position: 0 2px;
+                padding: 0px 0px 12px 30px;
+                list-style: none;
+                margin: 0;
+                border-bottom: none !important;
+            }
+
+            /* ======================================= */
+
+            .ims-title-box {
+                display: table;
+                margin: 20px 0 0 0;
+            }
+
+            .ims-title-row {
+                display: table-row;
+            }
+
+            .ims-title-icon {
+                padding: 0 15px 0 0;
+                display: table-cell;
+            }
+
+            .ims-title {
+                padding: 0;
+                display: table-cell;
+                vertical-align: top;
+            }
+
+            .ims-title h2 {
+                margin: 25px 0 0 0;
+            }
+
+            .ims-title h3 {
+                margin: 5px 0 0 0;
+                padding: 0;
+            }
+
+            .ims-title h4 {
+                margin: 0;
+                padding: 0;
+            }
+
+            td {
+                padding: 8px;
+            }
+
+            td h4 {
+                margin: 10px !important;
+                color: #FFFFFF !important;
+            }
+
+            button.active>img {
+                color: #FFF;
+            }
+
+            button.active {
+                box-shadow: none !important;
+                background: rgba(255, 255, 255, 0) !important;
+            }
+
+            button.active#nu>.nubg,
+            button.active#ec>.ecbg,
+            button.active#ph>.phbg {
+                position: absolute;
+                margin: -107px -8px;
+
+                border-radius: 50%;
+                width: 115px;
+                height: 115px;
+                z-index: -1;
+
+            }
+
+
+            button.active#nu>.nubg {
+                background-color: #F58220 !important;
+            }
+
+            button.active#ec>.ecbg {
+                background-color: #F26334 !important;
+            }
+
+            button.active#ph>.phbg {
+                background-color: #002C6C !important;
+            }
+
+            .icon-parafloat {
+                padding: 0 0 0 20px;
+                position: relative;
+            }
+
+            .icon-parafloat p,
+            .icon-parafloat ul li {
+                font-size: 16px;
+                line-height: 24px;
+                color: #454545;
+                font-family: "Gotham SSm A", "Gotham SSm B", Verdana, sans-serif;
+                margin: 0 0 10px 25px;
+                /* Adjust left margin to complement for icon image width */
+                font-weight: 300;
+            }
+
+            .icon-parafloat img {
+                left: 0;
+                position: absolute;
+                top: 0;
+            }
+
+            .step-img {
+                width: 100%;
+                background-color: #FFFFFF;
+                text-align: center;
+            }
+
+            .modal-img {
+                position: absolute;
+                max-height: 100px;
+                right: 100px;
+                max-width: 100px;
+                top: 20%;
+                -webkit-transform: translateY(-50%);
+                        transform: translateY(-50%);
+            }
+
+            .reg-steps {
+                list-style: none;
+                counter-reset: step-counter;
+                display: -webkit-box;
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0;
+                padding: 0;
+            }
+
+            .reg-steps li {
+                display: -webkit-box;
+                display: flex;
+            }
+
+            .reg-steps li::before {
+                counter-increment: step-counter;
+                display: -webkit-box;
+                display: flex;
+                content: "Step "counter(step-counter)".";
+                margin-right: 0.5rem;
+                min-width: 7rem;
+                text-transform: uppercase;
+                color: #002c6c;
+                font-weight: 900;
+            }
+
+            .reg-steps-fr li::before {
+                content: "Étape "counter(step-counter)".";
+                min-width: 8rem;
+            }
+
+            .video-content {
+                width: 100%;
+            }

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>GS1 Canada - PC FAQ</title><meta name="description" content="GS1 is a neutral, not-for-profit organization that develops and maintains global standards for efficient business communication, improving the efficiency, safety, security, sustainability and visibility of value chains across physical and digital channels. In Canada, through our unique community management role, we collaborate with business leaders and industry work groups to develop standards, implementation guidelines and non-proprietary business solutions, supporting subscribers of all sizes across multiple sectors."><meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"><meta name="viewport" content="width=device-width, initial-scale=1,  maximum-scale=3.0, minimum-scale=1"><meta name="gs1-template" content="gs1-v1.0"><link rel="stylesheet" type="text/css" href="/css/fonts.css"><link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css"><link rel="stylesheet" type="text/css" href="/css/bootstrap-theme.css"><link rel="stylesheet" type="text/css" href="/css/styles.css"><script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script><script type="text/javascript" src="/js/bootstrap.min.js"></script><script type="text/javascript" src="/js/gs1ca-scripts.js"></script><script src="/js/jquery.mobile-events.min.js"></script><script src="/js/jquery.flip.min.js"></script><link rel="icon" href="/favicon.ico"><meta name="keywords" content="bar code, barcode, barcodes, bar codes, UPC-A, UPC, upc code, upc codes, GTIN, data synch, data synchronization, data exchange, information exchange, ECCnet, ECCNET, Company Prefix, Company Prefix Licence,  Company Prefix License, supply chain, marketing images, planogram images, healthcare supply chain, health care supply chain, product recall, planogram, planogramming, Item Centre, Item Center"><link rel="stylesheet" type="text/css" href="/css/bog-styles.css"><meta name="next-head-count" content="18">
+</head>
+  <body>
+    <div class="container toolkit">
+                    <div class="row" id="resources"
+                    style="display: flex; justify-content: center; flex-flow: row wrap; margin: 0px -1.2em;"></div>
+    </div>
+    <script>
+          // let imageStyle.icon;
+          const resources = [
+        {
+            title: 'Content Capture Options',
+            sub: 'Flexible options to capture standardized planogram image and data content.',
+            image: '/gs1ca-components/images/icons/camera.svg',
+            
+            url: '/content-capture/#pc'
+        },
+        {
+            title: 'The Vault',
+            sub: 'View, download and distribute content between trading partners.',
+            image: '/gs1ca-components/images/icons/vault.svg',
+            
+            url: '/the-vault/',
+        },
+        {
+            title: 'Planogram Content Extract',
+            sub: 'Automated brand-owner and third party planogram data extracts.',
+            image: '/gs1ca-components/images/icons/planogram-content-extract.svg',
+            
+            url: '/planogram-content/',
+        },
+        {
+            title: 'Sample Planogram Images',
+            sub: 'Examples of GS1 Canada’s planogram images.',
+            image: '/gs1ca-components/images/icons/planogram-jam.svg',
+            
+            url: '/our-solutions/planogram-content/',
+        },
+        {
+            title: 'TrueSource™ Dashboard',
+            sub: 'Track the status of your marketing content.',
+            image: '/gs1ca-components/images/icons/dashboard-binoculars.svg',
+            
+            url: '/dashboard/',
+        },
+        {
+            title: 'ECCnet Data Excellence',
+            sub: 'The importance of data quality.',
+            image: '/gs1ca-components/images/icons/data-excellence.svg',
+            
+            url: '/data-excellence/',
+        },
+        ]
+          // onclick="PageLink('/help/')
+        let resourceContainer = document.querySelector('#resources');
+        function CreateTile(json, el) {
+            for (let i = 0; i < json.length; i++) {
+                let ins = json[i];
+
+                let tile = document.createElement('div');
+                tile.style.minWidth = '133px',
+                    tile.style.width = '33%', // change this for tile width
+                    tile.style.padding = '1em';
+                let tileInfo = document.createElement('div');
+                tileInfo.setAttribute('onclick', "PageLink('" + ins.url + "')");
+                tileInfo.classList.add("content-module-wrapper");
+                tileInfo.classList.add("bg-blue");
+                tileInfo.classList.add("link-tile");
+                tileInfo.style.border = '1px solid black';
+                tileInfo.style.height = '100%';
+                tileInfo.style.cursor = 'pointer';
+                let imgContainer = document.createElement('div');
+                imgContainer.style.width = '100%';
+                imgContainer.style.backgroundColor = '#fff';
+                imgContainer.style.height = '150px';
+                imgContainer.style.padding = '1em';
+                imgContainer.style.display = 'flex';
+                imgContainer.style.justifyContent = 'center';
+                let containerLink = document.createElement('a');
+                containerLink.setAttribute('href', ins.url);
+                let containerImg = document.createElement('img');
+                containerImg.setAttribute('src', ins.image);
+                containerImg.setAttribute('alt', ins.title);
+                containerImg.style.maxWidth = '100%';
+                containerImg.style.maxHeight = '100%';
+                (ins.imgWidth)? containerImg.style.width = ins.imgWidth : containerImg.style.width = '150px';
+                containerImg.style.height = '150px';
+                let textContainer = document.createElement('div');
+                textContainer.classList.add('bg-blue');
+                textContainer.classList.add('text-center');
+                let containerHeader = document.createElement('h4');
+                containerHeader.classList.add('color-white');
+                containerHeader.style.fontWeight = '700'
+                containerHeader.style.margin = '0.5em 0px 0.1em'
+                containerHeader.textContent = ins.title;
+                let containerSubHead = document.createElement('p');
+                containerSubHead.classList.add('color-white');
+                containerSubHead.style.fontSize = '0.8em';
+                containerSubHead.style.lineHeight = '1.2em';
+                containerSubHead.textContent = ins.sub;
+
+                textContainer.appendChild(containerHeader);
+                textContainer.appendChild(containerSubHead);
+                containerLink.appendChild(containerImg);
+                imgContainer.appendChild(containerLink);
+                tileInfo.appendChild(imgContainer);
+                tileInfo.appendChild(textContainer);
+                tile.appendChild(tileInfo);
+                el.appendChild(tile);
+            }
+        }
+
+        CreateTile(resources, resourceContainer);
+
+        function PageLink(link) {
+            return window.location.href = link;
+        };
+    </script>
+  </body>
+</html>
