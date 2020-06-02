@@ -4,36 +4,19 @@
 </head>
   <body>
     <div class="container toolkit">
-      <h1>
-        Online Resources
-      </h1>
-      <nav>
-        <ul id="root-nav">
-        </ul>
-      </nav>
 
+        <nav>
+          <ul>
+            <li>
+              <a href="/tiles/">Tiles</a>
+            </li>
+            <li>
+              <a href="/tabs/sbb-2020-06-02/">SBB Tabs</a>
+            </li>
+          </ul>
+        </nav>
+          
     </div>
-    <script>
-      let nav = document.querySelector('#root-nav');
-      let links = [
-        {
-          title: 'Tiles',
-          link: '/tiles/',
-        }
-      ]
 
-      window.onload = function (){
-        for(let i=0; i<links.length; i++){
-        let ins = links[i];
-        let linkItem = document.createElement('li');
-        let linkAnchor = document.createElement('a');
-        linkAnchor.setAttribute('href', ins.link);
-        linkAnchor.textContent = ins.title;
-        linkItem.appendChild(linkAnchor);
-        nav.appendChild(linkItem);
-        }
-      }
-
-    </script>
   </body>
 </html>
