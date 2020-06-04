@@ -6,17 +6,40 @@
     <div class="container toolkit">
 
         <nav>
-          <ul>
-            <li>
-              <a href="/tiles/">Tiles</a>
-            </li>
-            <li>
-              <a href="/tabs/sbb-2020-06-02/">SBB Tabs</a>
-            </li>
-          </ul>
-        </nav>
+          <ul id="nav-list"/>
           
     </div>
+<script>
+  const navList = document.getElementById('nav-list');
+  const data = [
+    {
+      name: 'Tiles',
+      url: '/tiles/'
+    },
+    {
+      name: 'SBB Tabs',
+      url: '/tabs/sbb-2020-06-02/'
+    },
+    {
+      name: 'GTIN Estimator',
+      url: '/gtin-estimator/'
+    },
+  ];
+          let LinkList = function(target){
+            for(let i=0; i<data.length; i++){
+              let ins = data[i]
+                let listItem = document.createElement('li');
+                let listAnchor = document.createElement('a');
+                listAnchor.setAttribute('href', ins.url);
+                listAnchor.setAttribute('target', '_blank');
+                listAnchor.textContent = ins.name;
+                listItem.appendChild(listAnchor);
+                target.appendChild(listItem);
+            }
+        
+        }
 
+        LinkList(navList);
+</script>
   </body>
 </html>

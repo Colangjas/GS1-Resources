@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>GS1 Canada - PC FAQ</title><meta name="description" content="GS1 is a neutral, not-for-profit organization that develops and maintains global standards for efficient business communication, improving the efficiency, safety, security, sustainability and visibility of value chains across physical and digital channels. In Canada, through our unique community management role, we collaborate with business leaders and industry work groups to develop standards, implementation guidelines and non-proprietary business solutions, supporting subscribers of all sizes across multiple sectors."><meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"><meta name="viewport" content="width=device-width, initial-scale=1,  maximum-scale=3.0, minimum-scale=1"><meta name="gs1-template" content="gs1-v1.0"><link rel="stylesheet" type="text/css" href="/css/fonts.css"><link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css"><link rel="stylesheet" type="text/css" href="/css/bootstrap-theme.css"><link rel="stylesheet" type="text/css" href="/css/styles.css"><script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script><script type="text/javascript" src="/js/bootstrap.min.js"></script><script type="text/javascript" src="/js/gs1ca-scripts.js"></script><script src="/js/jquery.mobile-events.min.js"></script><script src="/js/jquery.flip.min.js"></script><link rel="icon" href="/favicon.ico"><meta name="keywords" content="bar code, barcode, barcodes, bar codes, UPC-A, UPC, upc code, upc codes, GTIN, data synch, data synchronization, data exchange, information exchange, ECCnet, ECCNET, Company Prefix, Company Prefix Licence,  Company Prefix License, supply chain, marketing images, planogram images, healthcare supply chain, health care supply chain, product recall, planogram, planogramming, Item Centre, Item Center"><link rel="stylesheet" type="text/css" href="/css/bog-styles.css"><meta name="next-head-count" content="18">
+</head>
+  <body>
+<div class="toolkit container-fluid">
+    <style type="text/css">
+        input[type=number] {
+            width: 80px;
+            overflow: hidden;
+            padding: 3px 5px;
+            text-align: center;
+        }
+    </style>
+    <div class="modal fade" id="modalGTINestimator" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h1 class="modal-title" id="myModalLabel">GTIN Estimator</h1>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-6">
+    
+                            <img src="/gs1ca-components/images/icons/GTINS_Yogurt_vertical-01.svg" class="img-responsive">
+                        </div>
+    
+    
+    
+                        <div class="col-sm-6 formLayoutX">
+                            <div class="row">
+                                <form id="calculator">
+                                    <div class="col-xs-12 col-sm-6 text-right" style="border: 0px none;"><label
+                                            for="desc">Item
+                                            Description:</label></div>
+                                    <div class="col-xs-12 col-sm-6" style="border: 0px none;"><textarea name="desc"
+                                            id="desc" cols="30" rows="2" style="max-width: 100%;"></textarea></div>
+                                    <div class="col-xs-12 col-sm-6 text-right" style="border: 0px none;"><label
+                                            for="sizetype">Sizes:</label></div>
+                                    <div class="col-xs-12 col-sm-6" style="border: 0px none;"><input type="number"
+                                            name="sizetype" id="sizetype" min="1" max="9999" value="1"></div>
+                                    <div class="col-xs-12 col-sm-6 text-right" style="border: 0px none;"><label
+                                            for="colourtype">Colours/flavours:</label>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6" style="border: 0px none;"><input type="number"
+                                            name="colourtype" id="colourtype" min="1" max="9999" value="1"></div>
+                                    <div class="col-xs-12 col-sm-6 text-right" style="border: 0px none;"><label
+                                            for="styletype">Styles/Varieties:</label></div>
+                                    <div class="col-xs-12 col-sm-6" style="border: 0px none;"><input type="number"
+                                            name="styletype" id="styletype" min="1" max="9999" value="1"></div>
+                                    <div class="col-xs-12 col-sm-6 text-right" style="border: 0px none;"><label
+                                            for="othertype">Other
+                                            Variations:</label></div>
+                                    <div class="col-xs-12 col-sm-6" style="border: 0px none;"><input type="number"
+                                            name="othertype" id="othertype" min="1" max="9999" value="1"></div>
+                                </form>
+                            </div>
+    
+    
+                            <div class="row" style="margin: 20px 0 0 0;background-color:#f26334;padding:20px 5px 5px 5px;">
+                                <div class="col-xs-6" style="border: 0px;">
+                                    <p style="font-weight: 900;color:#ffffff;">Total GTINs required:</p>
+                                </div>
+                                <div class="col-xs-4" style="border: 0px;"><span id="totalgtins"
+                                        style="font-weight: 900;color:#ffffff;">1</span></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="modal-footer">
+                    <div class="pull-left">
+                    </div>
+                    <div class="pull-right">
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(function () {
+            function Calculate() {
+                let $size = document.getElementById('sizetype').value,
+                    $colour = document.getElementById('colourtype').value,
+                    $style = document.getElementById('styletype').value,
+                    $order = document.getElementById('othertype').value;
+                let $total = $size * $colour * $style * $order;
+                if ($total > 0) {
+                    return $total;
+                } else {
+                    return 'Invalid Number'
+                }
+            };
+            $('input')
+                .click(function () {
+                    let $totalBox = document.getElementById('totalgtins');
+                    $totalBox.innerHTML = Calculate();
+                })
+                .keyup(function () {
+                    let $totalBox = document.getElementById('totalgtins');
+                    $totalBox.innerHTML = Calculate();
+                });
+        });
+
+
+    </script>
+</div>
+
+
+
+  </body>
+</html>
